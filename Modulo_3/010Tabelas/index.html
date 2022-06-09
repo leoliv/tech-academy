@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tables</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 4px 1px;
+        border: 2px solid gray;
+        empty-cells: hide;
+      }
+
+      thead {
+        color: black;
+        font-size: 1.2rem;
+        background-color: lightgray;
+      }
+
+      #endereco {
+        text-align: center;
+      }
+
+      tbody {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+        text-align: left;
+      }
+
+      tfoot {
+        color: black;
+        background-color: lightgray;
+      }
+
+      tr,
+      td,
+      th {
+        border: 2px solid gray;
+      }
+
+      th {
+        text-align: left;
+      }
+
+      caption {
+        caption-side: bottom;
+        font-size: 0.8rem;
+        font-weight: 100;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: lightskyblue;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: lightcyan;
+      }
+
+      tbody tr:hover {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <caption>
+        Tabela 1. Relação de Clientes da ABC company
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2">Name</th>
+          <th rowspan="2">Cellphone</th>
+          <th id="endereco" colspan="5">Address</th>
+        </tr>
+        <tr>
+          <th>Street</th>
+          <th>Number</th>
+          <th>City</th>
+          <th>State</th>
+          <th>CEP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Raimundo Gonçalves</td>
+          <td>+554399999-9999</td>
+          <td>Av. Alberto Silva</td>
+          <td>1234</td>
+          <td>Av. Caramelo</td>
+          <td>RJ</td>
+          <td>834055000</td>
+        </tr>
+        <tr>
+          <td>José Farias</td>
+          <td>+554399999-9999</td>
+          <td>Av. Coelhos</td>
+          <td>1234</td>
+          <td>New York</td>
+          <td>NY</td>
+          <td>834055000</td>
+        </tr>
+        <tr>
+          <td>Joseph Smith</td>
+          <td>+554399999-9999</td>
+          <td>Av. Mauricio</td>
+          <td>1234</td>
+          <td>Rio de Janeiro</td>
+          <td>RJ</td>
+          <td>834055000</td>
+        </tr>
+        <tr>
+          <td>Euracio Camundongo</td>
+          <td>+554399999-9999</td>
+          <td>Av. Barreto Silva</td>
+          <td>1234</td>
+          <td>São Paulo</td>
+          <td>SP</td>
+          <td>834055000</td>
+        </tr>
+        <tr>
+          <td>Raimundo Gonçalves</td>
+          <td>+554399999-9999</td>
+          <td>Av. Alberto Silva</td>
+          <td>1234</td>
+          <td>Av. Caramelo</td>
+          <td>RJ</td>
+          <td>834055000</td>
+        </tr>
+        <tr>
+          <td>José Farias</td>
+          <td>+554399999-9999</td>
+          <td>Av. Coelhos</td>
+          <td>1234</td>
+          <td>New York</td>
+          <td>NY</td>
+          <td>834055000</td>
+        </tr>
+        <tr>
+          <td>Joseph Smith</td>
+          <td>+554399999-9999</td>
+          <td>Av. Mauricio</td>
+          <td>1234</td>
+          <td>Rio de Janeiro</td>
+          <td>RJ</td>
+          <td>834055000</td>
+        </tr>
+        <tr>
+          <td>Euracio Camundongo</td>
+          <td>+554399999-9999</td>
+          <td>Av. Barreto Silva</td>
+          <td>1234</td>
+          <td>São Paulo</td>
+          <td>SP</td>
+          <td>834055000</td>
+        </tr>
+        <tr>
+          <td>José Farias</td>
+          <td>+554399999-9999</td>
+          <td>Av. Coelhos</td>
+          <td>1234</td>
+          <td>New York</td>
+          <td>NY</td>
+          <td>834055000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="7">For more information, contact us.</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

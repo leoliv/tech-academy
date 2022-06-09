@@ -1,0 +1,18 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  display: inline-block;
+  color: green;
+  background-color: red;
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: help;
+}
+
+p {
+  display: block;
+  color: #ddd;
+}
