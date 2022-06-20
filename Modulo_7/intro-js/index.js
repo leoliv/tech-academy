@@ -1,25 +1,37 @@
-// var h2 = document.createElement('h2');
-// h2.textContent = `Hello world`;
-// document.body.appendChild(h2);
-// alert('Seja bem vindo!');
-// document.write('<p>Essa a nossa primeira video aula</p>');
-document.querySelector('#t1').textContent = 'Javascript Introdução';
-document.querySelector('#t2').textContent =
-  'Exemplificando algumas funcionalidades';
+let x = 18;
+console.log(typeof x); // number
 
-// const nome = prompt('Qual o seu nome?');
-// alert(`Que bom ter você por aqui ${nome}!!!`);
+function mediaAritimeticaSimples(a, b) {
+  console.log((a + b) / 2);
+}
 
-// function login() {
-//   var nome = document.getElementById('name').value;
-//   alert(`Olá ${nome} Bem vindo!`);
-//   document.getElementById('formulario').style.display = 'none';
-// }
+mediaAritimeticaSimples(10, 5);
 
-const colors = addEventListener('change', () => {
-  const menu = document.querySelector('#corDeFundo');
-  const cor = menu.options[menu.selectedIndex].value;
-  document.body.style.backgroundColor = cor;
-});
+function soma(a, b) {
+  let z = a + b;
+  return z;
+}
 
-colors();
+console.log(soma(5, 6));
+
+const pessoa = {
+  nome: "Maria",
+  idade: 22,
+  exibir() {
+    return `Olá ${this.nome}! Você tem ${this.idade}.`;
+  },
+};
+
+console.log(pessoa.exibir());
+
+const estado = "Rio Grande do Norte";
+const parte = estado.substring(14, 19);
+const parteLength = estado.substring(estado.length - 5);
+console.log(parte);
+console.log(parteLength);
+const position = "Minha cor favorita é: purple";
+const indexDaCor = position.indexOf(":");
+console.log(indexDaCor);
+const texto = "basquete";
+const novoTexto = texto.replace("bas", "ra");
+console.log(novoTexto);

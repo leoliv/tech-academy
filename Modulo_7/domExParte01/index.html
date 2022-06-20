@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <title>Lista de Tarefas</title>
+    <style type="text/css" media="screen">
+      body {
+        background-color: #0c1549;
+        color: white;
+        font: 1rem 'Arial';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      div {
+        display: inline-block;
+        position: relative;
+        background-color: #050920;
+      }
+      button.remover {
+        position: absolute;
+        right: 0;
+      }
+      ul li.naoRealizada {
+        list-style-type: '\2610';
+        cursor: pointer;
+        text-indent: 1rem;
+        user-select: none;
+      }
+      ul li.realizada {
+        list-style-type: '\2611';
+        cursor: pointer;
+        text-indent: 1rem;
+        text-decoration: line-through;
+        user-select: none;
+        color: darkgray;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Lista de Tarefas</h2>
+    <div>
+      <input type="text" id="caixaDeTexto" placeholder="tarefa" />
+      <button id="botaoAdicionar" class="adicionar">&#10010;</button>
+
+      <select name="listaSuspensa" id="listaSuspensa" hidden>
+        <option value="">--Selecione uma opção--</option>
+        <option value="marcar">Marcar Todas as Tarefas</option>
+        <option value="desmarcar">Desmarcar Todas as Tarefas</option>
+        <option value="limpar">Limpar Todas as Tarefas</option>
+      </select>
+      <ul id="listaTarefas"></ul>
+    </div>
+  </body>
+</html>
