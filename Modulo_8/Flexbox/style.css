@@ -1,0 +1,14 @@
+.flex-container {
+  display: flex;
+  background-color: gold;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  background-color: blueviolet;
+  margin: 0.8rem;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 1rem;
+}
